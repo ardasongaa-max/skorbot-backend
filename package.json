@@ -1,0 +1,30 @@
+{
+  "name": "skorbot-backend",
+  "version": "1.0.0",
+  "description": "Sıfır maliyetli, rate-limit dostu canlı skor / puan durumu backend servisi",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node jobs/scheduler.js --once"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "node-cache": "^5.1.2",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "sqlite3": "^5.1.7",
+    "express-rate-limit": "^7.4.0",
+    "compression": "^1.7.4",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
