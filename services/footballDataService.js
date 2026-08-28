@@ -64,10 +64,8 @@ async function getFixtures(leagueCode) {
   return data;
 }
 
-/** Bugün oynanan / canlı maçları TÜM takip edilen ligler için tek istekte çeker */
 async function getTodayMatches() {
-  const today = new Date().toISOString().slice(0, 10);
-  const data = await request(`/matches?dateFrom=${today}&dateTo=${today}`);
+  const data = await request('/matches');
   return data;
 }
 
