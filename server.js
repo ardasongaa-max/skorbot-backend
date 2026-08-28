@@ -46,6 +46,8 @@ app.use('/api/standings', standingsRoutes);
 app.use('/api/fixtures', fixturesRoutes);
 app.use('/api/live-matches', liveMatchesRoutes);
 app.use('/api/teams', teamsRoutes);
+app.use('/api/standings', standingsRoutes);
+app.use('/api/fixtures', fixturesRoutes);
 
 // --- 404 & Merkezi Hata Yönetimi ---
 app.use(notFoundHandler);
