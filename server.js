@@ -13,7 +13,6 @@ const env = require('./config/env');
 const logger = require('./utils/logger');
 const db = require('./db/database');
 const scheduler = require('./jobs/scheduler');
-const standingsRoutes = require('./routes/standingsRoutes');
 const fixturesRoutes = require('./routes/fixturesRoutes');
 const { publicApiLimiter } = require('./middleware/rateLimiter');
 const { notFoundHandler, errorHandler } = require('./middleware/errorHandler');
